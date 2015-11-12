@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+
+"""my really awesome FUn Cool boss thinKing thing"""
+import skilstak.colors as c
+def print_random_color(who):
+    """simply prints Hello <who> as a random color.
+
+    """
+def print_plain(who="world" ):
+    """Simply prints Hello <who> to the screen.
+
+    Args:
+        who (str): Who are you sayimg hello to
+        
+        """
+    print(c.rc() + "HELLo " + who + ".")
+
+if __name__ == '__main__':
+    import sys
+    who = "world"
+    if len(sys.argv) > 1:
+        who = sys.argv[1]
+    print_plain(who)
