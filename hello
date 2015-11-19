@@ -7,17 +7,26 @@ def print_random_color(who):
 
     """
 def print_plain(who="world" ):
+
     """Simply prints Hello <who> to the screen.
 
     Args:
-        who (str): Who are you sayimg hello to
+        who (str): Who are you saying hello to
         
         """
     print(c.rc() + "HELLo " + who + ".")
 
-if __name__ == '__main__':
-    import sys
-    who = "world"
-    if len(sys.argv) > 1:
-        who = sys.argv[1]
-    print_plain(who)
+    """Prints Hello and (who) in ramdom colors
+
+"""
+    from sys import argv
+    name = "world"
+    option = " "
+    if argv[1].startswith("-"):
+        option = argv[1]
+    else:
+        name = argv[1]
+    else:
+        if argv > [1]:
+            option = argv [1]
+            name = argv [3]
